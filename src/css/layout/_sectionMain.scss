@@ -1,0 +1,25 @@
+.sectionMain {
+    min-height: 100vh;
+    @include atSmall {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    &__character {
+        background-color: $color-primary;
+        background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
+        @include atSmall {
+            flex: 1;
+        }
+    }
+
+    &__search {
+        box-shadow: -5px 0 10px rgba($color-black, .125);
+        position: relative;
+        z-index: 1;
+        @include atSmall {
+            flex: 1;
+        }
+    }
+}

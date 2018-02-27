@@ -1,0 +1,58 @@
+.characterDisplayer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    background-color: $color-white;
+    box-shadow: 0 5px 10px rgba($color-black, .125);
+    position: relative;
+
+    &__label {
+        font-size: 6.667rem;
+        color: $color-primary;
+        @include atSmall {
+            font-size: 10rem;
+        }
+    }
+
+    &__controls {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn {
+        height: 3.333rem;
+        width: 3.333rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
+        box-shadow: 0 2px 10px rgba($color-black, .25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include atSmall {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
+        &-icon {
+            color: $color-white;
+            font-size: 1.333rem;
+            @include atSmall {
+                font-size: 1rem;
+            }
+        }
+
+        & + & {
+            margin-left: 1.333rem;
+            @include atSmall {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

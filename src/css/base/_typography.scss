@@ -1,0 +1,34 @@
+.heading-primary {
+    font-size: 15rem;
+    color: $color-primary;
+    @include atSmall {
+        font-size: 12rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 2.75rem;
+    color: $color-white;
+    font-weight: 400;
+    @include atSmall {
+        font-size: 2rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    color: $color-dark;
+    font-weight: 400;
+    @include atSmall {
+        font-size: 1.5rem;
+    }
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    color: $color-dark;
+    font-weight: 300;
+    @include atSmall {
+        font-size: 1.125rem;
+    }
+}

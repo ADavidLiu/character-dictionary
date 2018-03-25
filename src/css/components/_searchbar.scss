@@ -1,0 +1,25 @@
+.searchbar {
+    width: 100%;
+    margin-bottom: 2rem;
+    @include atSmall {
+        margin-bottom: 1.5rem;
+    }
+
+    &__input {
+        border: 1px solid $color-gray;
+        width: 100%;
+        padding: 1rem;
+        color: $color-dark;
+        font-family: $font-main;
+        font-size: 1.333rem;
+        transition: all .25s;
+        border-radius: 10rem;
+        @include atSmall {
+            font-size: 1rem;
+        }
+
+        &:focus {
+            border-color: $color-primary;
+        }
+    }
+}

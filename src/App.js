@@ -11,10 +11,10 @@ class App extends Component {
         this.setState({character: newCharacter});
     }
 
-    render() {
+    render = () => {
         return (
             <div className="App">
-                <Layout character={this.state.character}></Layout>
+                <Layout character={this.state.character} changeCharacter={this.changeCharacter}></Layout>
             </div>
         );
     }

@@ -1,19 +1,21 @@
-import React, {Component} from "react";
+import React from "react";
 
 import CharacterDisplayer from "./characterDisplayer";
+import CharacterInfo from "./characterInfo";
+import Search from "./search";
 
-class Layout extends Component {
-    render() {
-        return (
-            <main className="sectionMain">
-                <div className="sectionMain__character">
-                    <CharacterDisplayer character={this.props.character}></CharacterDisplayer>
-                    
-                </div>
-                <div className="sectionMain__search"></div>
-            </main>
-        );
-    }
+const Layout = (props) => {
+    return (
+        <main className="sectionMain">
+            <section className="sectionMain__character">
+                <CharacterDisplayer character={props.character}></CharacterDisplayer>
+                <CharacterInfo character={props.character}></CharacterInfo>
+            </section>
+            <aside className="sectionMain__search">
+                <Search changeCharacter={props.changeCharacter}></Search>
+            </aside>
+        </main>
+    );
 }
 
 export default Layout;

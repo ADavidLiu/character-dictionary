@@ -2,16 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50%;
+    height: 50vh;
     background-color: $color-white;
     box-shadow: 0 5px 10px rgba($color-black, .125);
     position: relative;
 
     &__label {
-        font-size: 6.667rem;
-        color: $color-primary;
-        @include atSmall {
-            font-size: 10rem;
+        @supports(-webkit-background-clip: text) {
+            background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
+            color: transparent;
+            -webkit-background-clip: text;
         }
     }
 

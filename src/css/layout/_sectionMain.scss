@@ -9,8 +9,10 @@
     &__character {
         background-color: $color-primary;
         background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
+        min-height: 100vh;
         @include atSmall {
-            flex: 1;
+            height: auto;
+            flex: 1 1 50%;
         }
     }
 
@@ -18,8 +20,10 @@
         box-shadow: -5px 0 10px rgba($color-black, .125);
         position: relative;
         z-index: 1;
+        padding: 2rem;
         @include atSmall {
-            flex: 1;
+            flex: 1 1 50%;
+            padding: 3rem;
         }
     }
 }

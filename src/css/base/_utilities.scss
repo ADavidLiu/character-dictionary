@@ -1,0 +1,23 @@
+// Colors
+.u-color {
+    &-white {
+        color: $color-white;
+    }
+}
+
+
+// Margin
+.u-margin {
+    &-bottom {
+        &-smallest {
+            margin-bottom: 10px;
+        }
+        
+        &-small {
+            margin-bottom: 1.333rem;
+            @include atSmall {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

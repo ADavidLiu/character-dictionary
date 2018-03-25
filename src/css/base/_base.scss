@@ -32,6 +32,22 @@ span {
     font-family: inherit;
 }
 
+h1 {
+    @extend .heading-primary;
+}
+
+h2 {
+    @extend .heading-secondary;
+}
+
+h3 {
+    @extend .heading-tertiary;
+}
+
+p {
+    @extend .paragraph;
+}
+
 ul,
 ol {
     list-style: none;

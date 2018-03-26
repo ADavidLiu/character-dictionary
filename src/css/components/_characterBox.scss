@@ -7,4 +7,17 @@
     border-radius: .5rem;
     cursor: pointer;
     margin-bottom: 3rem;
+    transition: all .25s;
+    @include atLarge {
+        flex: 0 1 30%;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
+        
+        h3,
+        p {
+            color: $color-white;
+        }
+    }
 }

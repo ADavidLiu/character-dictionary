@@ -23,4 +23,8 @@
             border-left: 2px solid $color-white;
         }
     }
+
+    &__definition {
+        text-transform: capitalize;
+    }
 }

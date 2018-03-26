@@ -7,11 +7,22 @@
     box-shadow: 0 5px 10px rgba($color-black, .125);
     position: relative;
 
-    &__label {
-        @supports(-webkit-background-clip: text) {
-            background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
-            color: transparent;
-            -webkit-background-clip: text;
+    &__zone {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: calc(100% - 5rem);
+        text-align: center;
+
+        svg {
+            width: auto !important;
+            height: 100% !important;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 

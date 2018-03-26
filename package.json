@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap": "^3.3.7",
+    "hanzi-writer": "^0.10.1",
+    "pinyin": "^2.8.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
